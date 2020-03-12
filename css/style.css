@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1vw;
+}
+
+div {
+  position: relative;
+}
+
+header {
+  display: flex;
+  background-color: #aaa;
+  flex-direction: column;
+}
+
+.navigation-section {
+  display: flex;
+}
+
+div.tnw-logo {
+  width: 105px;
+  background-color: red; 
+  background-image: url(../images/tnw.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+  height: 80px;
+}
+
+div.menu-bar {
+  width: calc(100% - 105px);
+}
+
+.black-menu {
+    background-color: #000;
+    height: 30px;
+    width: 100%;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.black-menu a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.black-menu a:hover {
+    color: #fff;
+}
+
+.black-menu ul {
+    display: inline-block;
+}
+
+.black-menu-right {
+    float: right;
+}
+
+.black-menu ul li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 3px;
+    letter-spacing: 0;
+}
+
+.white-menu {
+    background-color: #fff;
+    height: 50px;
+}
