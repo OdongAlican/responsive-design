@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <div class="navigation-section">
             <div class="tnw-logo"></div>
             <div class="menu-bar">
@@ -120,7 +120,7 @@
             </div>
         </section>
         <section class="latest-news">
-            <h1 class="section-heading">Latest News <i class="fas fa-chevron-right"></i>
+            <a><h1 class="section-heading">Latest News <i class="fas fa-chevron-right"></i></a>
             </h1>
             <div class="latest-news-grid">
                 <div class="latest-news-item">
@@ -225,34 +225,46 @@
             </div>
         </section>
         <section class="latest-funding">
-            <header>
-                <h2><a href="#"> Latest funding rounds on index.co <i class="fas fa-chevron-right"></i> </a></h2>
-                <a href="#">See more</a>
-                <a href="#">Get updates by email</a>
-                <a href="#">Add info</a>
+            <header class="latest-funding-header">
+                <div class="latest-funding-left">
+                    <a href="#"><h2  class="section-heading">Latest funding rounds on index.co <i class="fas fa-chevron-right"></i></h2></a>
+                </div>
+                <div class="latest-funding-right">
+                    <a href="#" class="latest-funding-menu">Add info</a><span class="pipe">&#x7c;</span>
+                    <a href="#" class="latest-funding-menu">Get updates by email</a><span class="pipe">&#x7c;</span>
+                    <a href="#" class="latest-funding-menu">See more</a>
+                </div>
             </header>
-            <div class="">
-                <div class="">
-                    <a href="#">
-                        <h4>Right-Hand Cybersecurity</h4>
+            <div class="latest-funding-grid">
+                <div class="latest-funding-grid-item">
+                    <a href="" class="latest-funding-grid-item-anchor">
                         <div class="">
-                            <h4>$ 1M</h4>
-                            <h5>seed fund</h5>
+                            <div class="latest-funding-grid-item-header">
+                                <h4>Right-Hand Cybersecurity</h4>
+                            </div>
+                            <div class="latest-funding-grid-item-values">
+                                <h4 class="latest-funding-grid-item-values-sum"><i class="fas fa-dollar-sign"></i> 1M</h4>
+                                <h5 class="latest-funding-grid-item-values-cat">seed fund</h5>
+                            </div>
                         </div>
                     </a>
-                    <div class="">
+
+                    <div class="latest-funding-grid-item-details">
                         <a href="#"><i class="fas fa-tag"></i> <span>Software</span></a>
                         <a href="#"> <i class="fas fa-briefcase"></i>
                             <span>Atlas Ventures</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="latest-funding-grid-item-footer">
                         <p><a href="#">Morning News Roundup: Cybersecurity firm Right-Hand raises US$1M in seed funding
                                 | e27 <span>on e27: Asia tech news</span></a></p>
                     </div>
+                    <div class="latest-funding-grid-item-image">
+                        
+                    </div>
                 </div>
-                <div class="">
-                    <a href="#">
+                <div class="latest-funding-grid-item">
+                    <a href="#" class="latest-funding-grid-item-header">
                         <h4>BioSight Ltd.</h4>
                         <div class="">
                             <h4>$ 19M</h4>
@@ -269,7 +281,7 @@
                         <p><a href="#">Biosight Secures $19M in Series C Funding<span>on FinSMEs</span></a></p>
                     </div>
                 </div>
-                <div class="">
+                <div class="latest-funding-grid-item">
                     <a href="#">
                         <h4>Silverback Therapeutics</h4>
                         <div class="">
@@ -290,7 +302,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="">
+                <div class="latest-funding-grid-item">
                     <a href="#">
                         <h4>Cloudbeds</h4>
                         <div class="">
