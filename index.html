@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/668d372fa7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Our Next Web </title>
+    <link href="https://fonts.googleapis.com/css?family=Cairo%7COxanium&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,30 +39,29 @@
                     </ul>
                 </div>
                 <div class="white-menu">
-                    <ul>
+                    <ul class="white-menu-left">
                         <li><a>latest</a></li>
                         <li><a>hard fork</a></li>
                         <li><a>plugged</a></li>
                         <li><a>fundamentals</a></li>
                         <li><a>readme</a></li>
+                        <li><a>growth quarters</a></li>
+                        <li><a>neural</a></li>
                     </ul>
-                    <ul>
-                        <li style="background-color: red;"><a href="#">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
+                    <div class="white-menu-right">
+                        <div class="white-menu-search-button"><a href="#"><i class="fas fa-search"></i></a></div>
+                        <div class="white-menu-close-button" >
                             <a href="#">
-                                <span>1</span>
-                                <span>2</span>
-                                <span>3</span>
+                                <div class="white-menu-close-button-line1"></div>
+                                <div class="white-menu-close-button-line2"></div>
+                                <div class="white-menu-close-button-line3"></div>
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="">
+        <div class="tech-festival">
             <p>
                 Did you know we have a TECH FESTIVAL? Check it out <i class="fas fa-long-arrow-alt-right"></i>
             </p>
@@ -69,31 +69,51 @@
     </header>
     <main>
         <section class="cover-articles">
-            <h1 class="hidden">Cover Articles</h1>
-            <div class="">
+            <!-- <h1 class="hidden">Cover Articles</h1> -->
+            <div class="cover-articles-division">
                 <article class="cover-article-one">
-                    <h2>Article one</h2>
-                    <img src="images/Chrome-accesible-796x417.jpg" alt="article-one">
-                    <p>Thursday — March 12, 2020</p>
-                    <p>TECH</p>
-                    <p>Google chrome can now show devs how their sites look to users with visual impairments</p>
-                    <p style="background-color: blue;">by Ivan Mehta <i class="far fa-clock"></i> 2 hours<i
-                            class="fas fa-share-alt"></i> ago 23</p>
+                    <a href="" class="cover-article-a">
+                        <div class="article-date">
+                            Thursday — March 12, 2020
+                        </div>
+                        <header class="article-header">
+                            <p class="article-header-caption">tech</p>
+                            <p class="article-header-text">Google chrome can now show devs how their sites look to users with visual impairments</p>
+                            <p class="article-header-info">by Ivan Mehta <i class="far fa-clock"></i> 2 hours<i
+                                    class="fas fa-share-alt"></i> ago 23</p>
+                        </header>
+                    </a>
+                    <!-- <h2 class="hidden">Article one</h2> -->
+                    <!-- <div class="article-image-container"> -->
+                        <!-- <img class="article-image" src="images/Chrome-accesible-796x417.jpg" alt="article-one"> -->
+                    <!-- </div> -->
+
                 </article>
-                <article class="cover-article-two">
-                    <h2>Article two</h2>
-                    <img src="images/code-1076536_1920-368x276.jpg" alt="article-two">
-                    <p>Reddit, PayPal, Spotify, and more are speaking at TNW’s tech festival in Amsterdam</p>
-                </article>
-                <article class="cover-article-three">
-                    <h2>Article three</h2>
-                    <img src="images/TNW-Conference-PanelImg.jpg" alt="article-three">
-                    <p>GEAR</p>
-                    <p>Apple Stores will avoid Watch and AirPod try-ons due to coronavirus</p>
-                    <p style="background-color: blue;">by Napier Lopez <i class="far fa-clock"></i> 3 hours <i
-                            class="fas fa-share-alt"></i>ago 13
-                    </p>
-                </article>
+                <section class="cover-article-right-section">
+                    <article class="cover-article-two">
+                        <!-- <h2>Article two</h2> -->
+                        <!-- <img src="images/code-1076536_1920-368x276.jpg" alt="article-two"> -->
+                        <header class="article-header">
+                            <p class="article-header-text ahSm">Reddit, PayPal, Spotify, and more are speaking at TNW’s tech festival in Amsterdam</p>
+                        </header>
+                        
+                    </article>
+                    <article class="cover-article-three">
+                        <!-- <h2>Article three</h2> -->
+                        <!-- <img src="images/TNW-Conference-PanelImg.jpg" alt="article-three"> -->
+                        <header class="article-header">
+                            <p  class="article-header-caption">gear</p>
+                            <p class="article-header-text ahSm">Apple Stores will avoid Watch and AirPod try-ons due to coronavirus</p>
+                            <p class="article-header-info">by Napier Lopez <i class="far fa-clock"></i> 3 hours <i
+                                class="fas fa-share-alt"></i>ago 13
+                        </p>
+                        </header>
+
+                        
+                        
+                        
+                    </article>
+                </section>
             </div>
         </section>
         <section class="latest-news">

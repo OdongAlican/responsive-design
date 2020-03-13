@@ -8,13 +8,19 @@ body {
   font-size: 1vw;
 }
 
-div {
+div, article {
   position: relative;
 }
 
+.hidden {
+  width: 0;
+  height: 0;
+}
+
+/* HEADER */
+
 header {
   display: flex;
-  background-color: #aaa;
   flex-direction: column;
 }
 
@@ -23,6 +29,7 @@ header {
 }
 
 div.tnw-logo {
+  /* display: none; */
   width: 105px;
   background-color: red; 
   background-image: url(../images/tnw.svg);
@@ -34,11 +41,12 @@ div.tnw-logo {
 
 div.menu-bar {
   width: calc(100% - 105px);
+  flex: 1;
 }
 
 .black-menu {
     background-color: #000;
-    height: 30px;
+    height: 32px;
     width: 100%;
     padding: 0 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +79,235 @@ div.menu-bar {
 }
 
 .white-menu {
-    background-color: #fff;
-    height: 50px;
+  /* position: sticky; */
+  /* top: 0; */
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
+  height: 48px;
+  font-family: 'Oxanium', cursive;
+  text-transform: uppercase;
+  padding: 0 0 0 12px;
+  color: #999;
+  letter-spacing: 0px;
+}
+
+/* .white-menu li { */
+  /* display: inline-block; */
+  /* line-height: 48px; */
+  /* margin: 0 10px; */
+/* } */
+
+.white-menu-left li {
+  display: inline-block;
+  line-height: 48px;
+  margin: 0 9px;
+  font-size: 14px;
+  /* letter-spacing: 0; */
+}
+
+.white-menu-right {
+  /* background-color: #eee; */
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+}
+
+.white-menu-search-button {
+  height: 96%;
+  margin-top: 1px;
+  width: 54px;
+  font-size: 18px;
+  border-left: 1px solid #aaa;
+}
+
+.white-menu-search-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color:yellow;  */
+  text-decoration: none;
+  color: #999;
+}
+
+.white-menu-close-button {
+  height: 96%;
+  margin-top: 1px;
+  width: 54px;
+  border-left: 1px solid #aaa;
+  
+}
+
+.white-menu-close-button a {
+  display: block;
+  height: 100%;
+  /* background-color:red; */
+}
+
+.white-menu-close-button-line1, .white-menu-close-button-line2, .white-menu-close-button-line3 {
+  position: absolute;
+  left: 12px;
+  width: 30px;
+  height: 4px;
+  background: #EDA28C;
+}
+
+.white-menu-close-button-line1 {
+  top: 14px;
+}
+
+.white-menu-close-button-line2 {
+  top: 22px
+}
+
+.white-menu-close-button-line3 {
+  top: 30px;
+}
+
+.tech-festival {
+  background-color: rgb(255, 226, 0);
+  height: 30px;
+  padding: 0 15px;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #222;
+
+}
+
+/* COVER ARTICLES */
+
+.cover-articles {
+  margin-top: 2px;
+  width: 100%;
+  /* background-color: violet; */
+  height: 544px;
+}
+
+.cover-articles-division {
+  /* background-color: yellow; */
+  display: flex;
+  margin: 0 8px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.cover-article-a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient( rgba(251, 81, 40, 0.3), rgba(0 ,0 ,0 , 1));
+}
+
+.cover-article-one {
+  flex: 2;
+  margin: 0 8px 0 0;
+
+  background: url("../images/Chrome-accesible-796x417.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  /* background: linear-gradient( rgba(251, 81, 40, 0.9), rgba(0 ,0 ,0 , 0.9)); */
+}
+
+.article-date {
+  float: right;
+  color: white;
+  height: 40px;
+  width: 300px;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  /* background-color: rgba(200, 200, 200, 0.5); */
+  line-height: 40px;
+  padding-right: 20px;
+
+}
+
+.article-header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 210px; */
+  padding: 20px;
+  color: white;
+
+}
+.cover-article-right-section {
+  /* position: relative; */
+  flex: 1;
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 8px 0 0; */
+}
+
+.article-header-caption {
+  text-transform: uppercase;
+  font-family: 'Oxanium', cursive;
+  font-size: 14px;
+
+}
+
+.article-header-text {
+  margin-top: 10px;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+.article-header-info {
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 15px;
+
+}
+/* .article-image-container {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Chrome-accesible-796x417.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
+
+.article-image {
+  width: 100%;
+  height: 100%;
+
+}
+
+.ahSm {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+.cover-article-two {
+  /* width: 100%; */
+  flex: 1;
+  background-color:green;
+  margin: 0 0 8px 0;
+
+  background-image: url("../images/code-1076536_1920-368x276.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.cover-article-three {
+  /* width: 100%; */
+  flex: 1;
+
+  background-image: url("../images/TNW-Conference-PanelImg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 }
