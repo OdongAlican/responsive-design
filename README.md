@@ -1,6 +1,6 @@
 # Responsive Design [Collaborative project]
-This site illutrates responsive design applied to a variety of screen sizes by using media queries
-Additionally makes use of grid and flex design styles
+This site illutrates responsive design applied to a variety of screen sizes by using media queries.
+Additionally makes use of grid and flex design styles.
 
 > The structure of the index page (index.html) is based on the TheNextWeb.com main page
 
@@ -18,7 +18,7 @@ The structure of the index page is based on the TheNextWeb.com main page
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/OdongAlican/responsive-design/4791bbccee23da96ed77d96f7af029c49bf973b1/index.html)
 
 ## Getting Started
 
