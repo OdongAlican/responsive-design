@@ -14,6 +14,7 @@
 .fa-share-alt, .fa-clock {
   margin: 0 4px;
 }
+
 /* GENERAL */
 
 * {
@@ -25,10 +26,6 @@
 a {
   cursor: pointer;
   text-decoration: none;
-}
-
-h1 {
-  font-size: inherit;
 }
 
 div, article, section {
@@ -78,7 +75,6 @@ div, article, section {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 500;
-  /* overflow: hidden; */
 }
 
 .black-menu a {
@@ -110,10 +106,8 @@ div, article, section {
 .main-header {
   display: flex;
   flex-direction: column;
-
   position: sticky;
   top: 0;
-
   height: 78px;
   z-index: 2;
 }
@@ -123,7 +117,6 @@ div, article, section {
 }
 
 .tnw-logo {
-  /* display: none; */
   width: 105px;
   background-color: red; 
   background-image: url(../images/tnw.svg);
@@ -131,7 +124,7 @@ div, article, section {
   background-size: 70%;
   background-position: center center;
   height: 48px;
-
+  display: none;
 }
 
 .menu-bar {
@@ -198,12 +191,11 @@ div, article, section {
 .tech-festival {
   background-color: rgb(255, 226, 0);
   height: 30px;
-  padding: 0 0 0 120px;
+  padding: 0 0 0 20px;
   line-height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #222;
-
 }
 
 /* COVER ARTICLES */
@@ -235,12 +227,18 @@ div, article, section {
 .cover-article-one {
   flex: 2;
   margin: 0 8px 0 0;
-
   background: url("../images/Chrome-accesible-796x417.jpg"), linear-gradient( transparent,  rgba(0 ,0 ,0 , 1));
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto 100%;
+}
 
+.tnw_image {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 50%;
+  height: 20%;
 }
 
 .article-date {
@@ -251,21 +249,18 @@ div, article, section {
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  /* background-color: rgba(200, 200, 200, 0.5); */
   line-height: 40px;
   padding-right: 20px;
-
 }
 
 .article-header {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* height: 210px; */
   padding: 20px;
   color: white;
-
 }
+
 .cover-article-right-section {
   flex: 1;
   display: flex;
@@ -283,7 +278,6 @@ div, article, section {
   font-size: 48px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-
 }
 
 .article-header-info {
@@ -291,7 +285,6 @@ div, article, section {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   margin-top: 15px;
-
 }
 
 .article-image {
@@ -396,6 +389,10 @@ div, article, section {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 24px;
   top: 20px;
+}
+
+.latest-funding-grid-item {
+  background-color: rgb(255, 250, 248);
 }
 
 .latest-funding-grid-item-anchor {
@@ -564,7 +561,6 @@ div, article, section {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
-
 }
 
 .article-section-image-overlay-info {
@@ -667,6 +663,21 @@ div, article, section {
   background-image: url("../images/Microsoft-Edge-Surf.jpg");
 }
 
+.latest-deals-menu {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 32, 0);
+  font-size: 17px;
+  font-weight: 100;
+  float: right;
+  line-height: 30px;
+  padding-top: 10px;
+  box-sizing: border-box;
+} 
+
+.latest-deals-menu a {
+  color: rgb(255, 32, 0);
+}
+
 .latest-deals-grid {
   clear: both;
   width: 100%;
@@ -698,7 +709,7 @@ div, article, section {
 .page-footer {
   box-sizing: border-box;
   background-color: #111;
-  padding: 20px 0 0 0;
+  padding: 24px 0 0 0;
 }
 
 .page-footer li {
@@ -785,11 +796,19 @@ div, article, section {
 }
 
 /* MEDIA QUERIES */
+
 @media only screen and (max-width: 1024px) {
 
   .latest-funding-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
 
+  .tnw-logo {
+    display: block;
+  }
+
+  .tech-festival {
+    padding: 0 0 0 120px;
   }
 
   .display-none {
@@ -910,6 +929,33 @@ div, article, section {
 
   .sections_grid {
     grid-template-columns: 1fr;
+  }
+
+  .latest-deals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .latest-deals-item {
+    height: 75px;
+    display: flex;
+  }
+
+  .latest-deals-grid img {
+    height: 100%;
+    width: 75px;
+    margin-right: 15px;
+  }
+  
+  .latest-deals-item-info {
+    flex: 1;
+  }
+
+  .copy-right {
+    height: 122px;
+  }
+
+  .copy-right-batch div {
+    display: block;
   }
 
 }
