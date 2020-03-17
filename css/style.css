@@ -103,13 +103,18 @@ section {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 0;
-  height: 78px;
+  background-color: white;
+  top: -32px;
   z-index: 2;
 }
 
 .navigation-section {
   display: flex;
+}
+
+.tnw-logo-container {
+  height: 80px;
+  background-color: red;
 }
 
 .tnw-logo {
@@ -120,7 +125,12 @@ section {
   background-size: 70%;
   background-position: center center;
   height: 48px;
+  top: 16px;
   display: none;
+}
+
+.navigation-section-menus {
+  flex: 1;
 }
 
 .menu-bar {
@@ -256,6 +266,13 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.cover-article-right-section a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
 }
 
 .article-header-caption {
@@ -835,7 +852,8 @@ section {
 
 @media only screen and (max-width: 780px) {
   .main-header {
-    height: 138px;
+    height: 106px;
+    top: 0;
   }
 
   .tech-festival {
@@ -845,6 +863,14 @@ section {
 
   .black-menu {
     display: none;
+  }
+
+  .tnw-logo-container {
+    top: -32px;
+  }
+
+  .tnw-logo {
+    top: 32px;
   }
 
   .white-menu {

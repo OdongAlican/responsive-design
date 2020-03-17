@@ -18,7 +18,7 @@ The structure of the index page is based on the TheNextWeb.com main page
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/OdongAlican/responsive-design/4791bbccee23da96ed77d96f7af029c49bf973b1/index.html)
+[Live Demo Link](https://rawcdn.githack.com/OdongAlican/responsive-design/dcf97775e34270620411276da306224670c04caa/index.html)
 
 ## Getting Started
 
